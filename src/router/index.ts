@@ -1,17 +1,25 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
+import HomePage from '../views/home_page.vue';
+import LoginPage from '../views/login_page.vue';
 
+// Vue Router setup page navigation
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/login'
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: LoginPage
+
   },
   {
     path: '/home',
     name: 'Home',
     component: HomePage
-  }
+  },
 ]
 
 const router = createRouter({

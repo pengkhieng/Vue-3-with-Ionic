@@ -2,20 +2,24 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-title>Small Title</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
+          <ion-title size="large">Home Screen</ion-title>
         </ion-toolbar>
       </ion-header>
 
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <strong class="hello" >hello screen.</strong>
+         <!-- Login Button -->
+         <div class="login-container">
+
+         <IonButton expand="full" @click="logout">Logout</IonButton>
+         </div>
       </div>
     </ion-content>
   </ion-page>
@@ -23,9 +27,21 @@
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import router from "@/router";
+const logout = () => {
+  router.back()
+};
 </script>
 
 <style scoped>
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: orange;
+}
+
 #container {
   text-align: center;
   
@@ -48,6 +64,9 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
   color: #8c8c8c;
   
   margin: 0;
+}
+.hello {
+  color: #ff0000;
 }
 
 #container a {
