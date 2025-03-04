@@ -3,54 +3,95 @@
 
 # Live Reload Commands
 
-- **Start Live Reload Process:**
-  ```bash
+**Start Live Reload Process:**
+```bash
   ionic cap run ios -l --external
-Run the App:
+```
 
-bash
-Copy
-Edit
+**Run the App:**
+```bash
 npx cap run ios
 npx cap run android
-Open IDE for Android or iOS:
+```
 
-bash
-Copy
-Edit
+**Open IDE for Android or iOS:**
+```bash
 npx cap open ios
 npx cap open android
-Sync the Latest Changes:
+```
 
-bash
-Copy
-Edit
+**Sync the Latest Changes:**
+```bash
 npx cap sync ios
 npx cap sync android
-Run the App with Live Reloading Enabled:
+```
 
-bash
-Copy
-Edit
+**Run the App with Live Reloading Enabled:**
+```bash
 npx cap run ios --livereload
 npx cap run android --livereload
-Vue Router Methods
-Navigation:
+```
 
-router.push() - Navigate to a new route (push to the history stack).
-router.replace() - Navigate and replace the current route (no history entry).
-router.back() - Go back to the previous route.
-router.go() - Go forward or backward a specific number of steps in the history.
-Route Access:
+***Vue Router Methods***
+**Navigation:**
 
-router.currentRoute - Get the current route info.
-router.resolve() - Resolve a route to a URL.
-router.hasRoute() - Check if a route exists.
-Route Management:
+```bash
+router.push()
+```
+- Navigate to a new route (push to the history stack).
+  
+```bash
+router.replace()
+```
+- Navigate and replace the current route (no history entry).
 
-router.addRoute() - Dynamically add routes.
-router.removeRoute() - Dynamically remove routes.
-Navigation Guards:
+```bash
+router.back()
+```
+ - Go back to the previous route.
 
-router.beforeEach() - Global navigation guard (before navigation).
-router.afterEach() - Global navigation guard (after navigation).
+```bash
+router.go()
+```
+ - Go forward or backward a specific number of steps in the history.
+
+**Route Access:**
+
+```bash
+router.currentRoute
+```
+ - Get the current route info.
+
+```bash
+router.resolve()
+```
+ - Resolve a route to a URL.
+
+```bash
+router.hasRoute()
+```
+ - Check if a route exists.
+   
+**Route Management:**
+
+```bash
+router.addRoute()
+```
+ - Dynamically add routes.
+
+```bash
+router.removeRoute()
+```
+ - Dynamically remove routes.
+
+**Navigation Guards:**
+
+```bash
+router.beforeEach()
+```
+ - Global navigation guard (before navigation).
+
+```bash
+router.afterEach()
+```
+ - Global navigation guard (after navigation).
