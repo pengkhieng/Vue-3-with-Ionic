@@ -4,12 +4,19 @@
 # Live Reload Commands
 
 **Start Live Reload Process:**
+
+***WEB***
 ```bash
-// WEB
   ionic serve
-// iOS
+```
+
+***iOS***
+```bash
   ionic cap run ios -l --external
-// Android
+```
+
+***Android***
+```bash
   ionic cap run android -l --external
 ```
 
