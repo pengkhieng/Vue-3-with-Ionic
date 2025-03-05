@@ -5,7 +5,12 @@
 
 **Start Live Reload Process:**
 ```bash
+// WEB
+  ionic serve
+// iOS
   ionic cap run ios -l --external
+// Android
+  ionic cap run android -l --external
 ```
 
 **Run the App:**
